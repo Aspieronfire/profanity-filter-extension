@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Profanity Filter",
+  "version": "1.0",
+  "description": "A chrome extension to filter profanity on web pages",
+  "permissions": ["activeTab"],
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"]
+  }]
+}
