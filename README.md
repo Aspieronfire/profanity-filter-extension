@@ -1,6 +1,6 @@
 # profanity-filter-extension
 
-this is the begining of a profanity filter I am working on to allow parents control over the type of content their childer are able to view on the internet. 
+this is the begining of a profanity filter I am working on to allow parents control over the type of content their children are able to view on the internet. 
 
 phase 1 of the filter is basic funtionality
 i.e basic prfanity filtering.
