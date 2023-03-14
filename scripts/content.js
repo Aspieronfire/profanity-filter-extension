@@ -27,7 +27,7 @@ function filterProfanity() {
 
     if (element.nodeName === "INPUT" || element.nodeName === "TEXTAREA") {
       var oldValue = element.value;
-      var newValue = oldValue.replace(regex, "***");
+      var newValue = oldValue.replace(regex, "profanity has been replaced");
 
       if (newValue !== oldValue) {
         element.value = newValue;
