@@ -1,4 +1,4 @@
-const profanityRegex = new RegExp(
+var regex = new RegExp(
   '\\b(' + [
     'a*s{1,2}(?!umption)\\b', // matches 'ass', 'asses', but not 'assumption'
     'b[i!1]tch\\b', // matches 'bitch' or 'bit*h'
