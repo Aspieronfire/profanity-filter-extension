@@ -3,9 +3,9 @@
 this is the begining of a profanity filter I am working on to allow parents control over the type of content their children are able to view on the internet. 
 
 phase 1 of the filter is basic funtionality
-i.e basic prfanity filtering.
+i.e basic profanity filtering.
 
-phase 2 is more advanced prfanity filtering to handle odd spellings or leet speak spellings and spellings of that nature.
+phase 2 is more advanced profanity filtering to handle odd spellings or leet speak spellings and spellings of that nature.
 
 phase 3 will expand the extension to be configurable giving parents the ability to add words or remove words from filtering based on their preferences.
 
