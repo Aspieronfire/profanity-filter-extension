@@ -1,10 +1,10 @@
 var regex = new RegExp(
   '\\b(' + [
-    'a*s{1,2}(?!umption)(?!s)\\b', // matches 'ass', 'asses', but not 'assumption'
+    'a*s{1,2}(?<!as(?!umption(?!s)))\\b', // matches 'ass', 'asses', but not 'assumption'
     'b[i!1]tch\\b', // matches 'bitch' or 'bit*h'
     'd[a@]mn\\b', // matches 'damn' or 'dam'
     'd[i!1]c?k\\b', // matches 'dick' or 'dic'
-    'f[u*]ck\\b', // matches 'fuck' or 'f*ck'
+    'f[u*]ck{1,2}\\b', // matches 'fuck' or 'f*ck'
     's[h*][i!1][t+e*]\\b', // matches 'shit', 'shite', 'shitty', 'shitey', etc.
     'p[i!1]ss\\b', // matches 'piss' or 'pis'
     'c[u*]nt\\b', // matches 'cunt' or 'c*nt'
@@ -17,6 +17,7 @@ var regex = new RegExp(
     't[i!1]ts?\\b' // matches 'tits' or 'tit'
   ].join('|') + ')',
   'gi'
+
 );
 
 function filterProfanity() {
