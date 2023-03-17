@@ -1,6 +1,6 @@
 var regex = new RegExp(
   '\\b(' + [
-    'a*s{1,2}(?!umption)(?!s)\\b', // matches 'ass', 'asses', but not 'assumption'
+    'a*s{1,2}(?!umption(?!s))\\b', // matches 'ass', 'asses', but not 'assumption'
     'b[i!1]tch\\b', // matches 'bitch' or 'bit*h'
     'd[a@]mn\\b', // matches 'damn' or 'dam'
     'd[i!1]c?k\\b', // matches 'dick' or 'dic'
