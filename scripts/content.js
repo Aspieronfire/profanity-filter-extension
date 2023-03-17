@@ -1,6 +1,6 @@
 var regex = new RegExp(
   '\\b(' + [
-    'a*s{1,2}(?!umption)\\b', // matches 'ass', 'asses', but not 'assumption'
+    'a*s{1,2}(?!umption(?!s))\\b', // matches 'ass', 'asses', but not 'assumption'
     'b[i!1]tch\\b', // matches 'bitch' or 'bit*h'
     'd[a@]mn\\b', // matches 'damn' or 'dam'
     'd[i!1]c?k\\b', // matches 'dick' or 'dic'
@@ -40,7 +40,7 @@ function filterProfanity() {
 
         if (child.nodeType === 3) {
           var oldValue = child.nodeValue;
-          var newValue = oldValue.replace(regex, "***");
+          var newValue = oldValue.replace(regex, "profanity has been replaced");
 
           if (newValue !== oldValue) {
             element.replaceChild(document.createTextNode(newValue), child);
