@@ -4,7 +4,7 @@ var regex = new RegExp(
     'b[i!1]tch\\b', // matches 'bitch' or 'bit*h'
     'd[a@]mn\\b', // matches 'damn' or 'dam'
     'd[i!1]c?k\\b', // matches 'dick' or 'dic'
-    'f[u*]ck{1,4}\\b', // matches 'fuck' or 'f*ck'
+    'f[u*]ck|f[u*]cka{1,4}\\b', // matches 'fuck' or 'f*ck'
     's[h*][i!1][t+e*]\\b', // matches 'shit', 'shite', 'shitty', 'shitey', etc.
     'p[i!1]ss\\b', // matches 'piss' or 'pis'
     'c[u*]nt\\b', // matches 'cunt' or 'c*nt'
